@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="/teste/darkmode_geral.css">
 </head>
 <body>
-    <p><h1><a href="/teste">Pagina Inicial</a></h1></p>
+    <p><h2><a href="/teste">Pagina Inicial</a></h2></p>
+    <p><h1>Calculadora Soma PHP</h1></p>
     <form method="post" action="">
         <label for="num1">Numero 1:</label>
         <input type="int" name="num1"> <br><br>
