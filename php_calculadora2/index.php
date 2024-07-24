@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora básica</title>
-    <link rel="stylesheet" href="/teste/darkmode_geral.css">
+    <link rel="stylesheet" href="/php-html-css/darkmode_geral.css">
 </head>
 <body>
     <p><h2><a href="/teste">Pagina Inicial</a></h2></p>
