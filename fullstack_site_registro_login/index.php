@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    require("conexao.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,7 +25,7 @@
             display: flex;
         }
         article {
-            background-color: rgb(25, 29, 32);
+            background-color: rgba(25, 29, 32, 0.9);
             padding: 1vw;
             margin: 1vw;
             height: 95vh;
