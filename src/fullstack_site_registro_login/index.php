@@ -58,7 +58,7 @@
                 <p><a href="login.php">Entre</a></p>
             </article>
             <article style="width: 20vw;">
-                <p><h2><a href="../src">Pagina Inicial</a></h2></p>
+                <p><h2><a href="../">Pagina Inicial</a></h2></p>
                 <h2>Sobre</h2>
                 <p>Sistema capaz de receber, armazenar e utilizar informações. Esse projeto busca explorar as linguagens de frontend HTML, CSS e melhorar meu entendimento de lógica de programação e backend para sites usando PHP e MySQL.</p>
             </article>
