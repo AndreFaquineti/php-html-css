@@ -1,13 +1,15 @@
 <?php
+    /*
     session_start();
     require("conexao.php");
+    */
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Sistema de registro e login</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/php-html-css/darkmode_geral.css">
+        <link rel="stylesheet" href="../darkmode_geral.css">
     </head>
     <style>
         html {
@@ -56,6 +58,7 @@
                 <p><a href="login.php">Entre</a></p>
             </article>
             <article style="width: 20vw;">
+                <p><h2><a href="../src">Pagina Inicial</a></h2></p>
                 <h2>Sobre</h2>
                 <p>Sistema capaz de receber, armazenar e utilizar informações. Esse projeto busca explorar as linguagens de frontend HTML, CSS e melhorar meu entendimento de lógica de programação e backend para sites usando PHP e MySQL.</p>
             </article>

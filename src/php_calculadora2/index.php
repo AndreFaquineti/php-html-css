@@ -2,10 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora básica</title>
-    <link rel="stylesheet" href="/php-html-css/darkmode_geral.css">
+    <link rel="stylesheet" href="../darkmode_geral.css">
 </head>
 <body>
-    <p><h2><a href="/teste">Pagina Inicial</a></h2></p>
+    <p><h2><a href="/src">Pagina Inicial</a></h2></p>
     <p><h1>Calculadora 4 Operações PHP</h1></p>
     <form method="post" action="">
         <label>Número 1
