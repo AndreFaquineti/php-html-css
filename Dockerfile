@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:8.3-apache
 
 # Instalar as extensões do PHP
 RUN docker-php-ext-install pdo pdo_mysql
