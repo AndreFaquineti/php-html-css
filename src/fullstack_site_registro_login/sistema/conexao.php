@@ -14,9 +14,9 @@ try {
 
     $stmt = $db->query("SELECT VERSION()");
     print($stmt->fetch()[0]);
-    echo ' Conexão bem sucedida!';
+    echo ' Conexão bem sucedida!<br>';
 } catch (Exception $e) {
-    echo "Error: " . $e->getMessage();
+    echo "Error: " . $e->getMessage() . '<br>';
 }
 /*
     $servername="mysql";

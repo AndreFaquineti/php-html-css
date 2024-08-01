@@ -1,14 +1,15 @@
+mysql --user avnadmin --password=AVNS_Eh3MstTzS3bRKma2cM9 --host mysql-portifolio-php-html-css.i.aivencloud.com --port 27320 defaultdb
+
 create database dbsisusuarios;
 use dbsisusuarios;
 
-create table tabela_usuarios(
-    Email varchar(255) NOT NULL,
+CREATE TABLE tabela_usuarios(
+    Id int AUTO_INCREMENT PRIMARY KEY,
+    Email varchar(255) NOT NULL UNIQUE,
     Senha varchar(255) NOT NULL,
-    Id int AUTO_INCREMENT,
     Tema int,
     Nome varchar(50) NOT NULL,
     Sobrenome varchar(50) NOT NULL,
-    Apelido varchar(50) NOT NULL,
-    PRIMARY_KEY (email)
+    Apelido varchar(50) NOT NULL
 );
 
