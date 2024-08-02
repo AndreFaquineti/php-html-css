@@ -24,7 +24,7 @@
         if ($usuario_existente == 'nao') {
             $stmt = $conn->prepare('INSERT INTO tabela_usuarios (Email, Senha) VALUES (:Email, :Senha)');
             $stmt->bindParam(':Email', $formulario_email);
-            $stmt->bindParam(':Senha', $formulario_senha);
+            $stmt->bindParam(':Senha', $senha_hash);
             $stmt->execute();
             echo 'Cadastro realizado com sucesso!';
         }
