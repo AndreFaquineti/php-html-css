@@ -8,8 +8,8 @@ CREATE TABLE tabela_usuarios(
     Email varchar(255) NOT NULL UNIQUE,
     Senha varchar(255) NOT NULL,
     Tema int,
-    Nome varchar(50) NOT NULL,
-    Sobrenome varchar(50) NOT NULL,
-    Apelido varchar(50) NOT NULL
+    Nome varchar(50) NULL,
+    Sobrenome varchar(50) NULL,
+    Apelido varchar(50) NULL
 );
 
