@@ -12,24 +12,9 @@ $db .= ";dbname=defaultdb";
 try {
     $conn = new PDO($db, $fields["user"], $fields["pass"]);
 
-    $stmt = $conn->query("SELECT VERSION()");
-    print($stmt->fetch()[0]);
-    echo ' Conexão bem sucedida!<br>';
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage() . '<br>';
 }
-/*
-    $servername="mysql";
-    $username="root";
-    $password="secret";
-    $dbname="dbSisUsuarios";
-
-    try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
-    } catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-    }
-*/
 ?>
