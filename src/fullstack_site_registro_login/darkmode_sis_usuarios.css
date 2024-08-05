@@ -1,0 +1,28 @@
+/*Darkmode*/
+body {
+    background-color: rgb(25, 29, 32);
+    color: aliceblue;
+}
+a {
+    color: deeppink;
+}
+/*Degradê*/
+#degrade1 {
+    background-image: linear-gradient(to right, deeppink, rgb(95, 10, 55));
+}
+
+.card {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: min-content;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.container {
+    /* vertical | horizontal */
+    /* superior | horizontal | inferior */
+    /* superior | direita | inferior | esquerda */
+    padding: 8px 16px;
+}

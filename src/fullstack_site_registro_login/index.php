@@ -22,6 +22,7 @@
         $_SESSION['global_usuario_Apelido'] = $usuario_info['Apelido'];
 
         # Mais variaveis pra parar de ter problema
+        $usuario_id = $_SESSION['global_usuario_Id'];
         $usuario_email = $_SESSION['global_usuario_Email'];
         $usuario_tema = $_SESSION['global_usuario_Tema'];
         $usuario_nome = $_SESSION['global_usuario_Nome'];
@@ -34,7 +35,7 @@
     <head>
         <title>Sistema de registro e login</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../darkmode_geral.css">
+        <link rel="stylesheet" href="darkmode_sis_usuarios.css">
     </head>
     <style>
         html {
@@ -44,7 +45,7 @@
         body {
             margin: 0;
             background-color: rgb(0, 83, 160);
-            background-image: url("windshield-5366584_1280.jpg");
+            background-image: url("imagens/windshield-5366584_1280.jpg");
             height: 100vh;
         }
         section {

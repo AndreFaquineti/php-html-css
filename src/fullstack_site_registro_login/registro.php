@@ -8,7 +8,7 @@
     <head>
         <title>Registro</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../darkmode_geral.css">
+        <link rel="stylesheet" href="darkmode_sis_usuarios.css">
     </head>
     <body>
         <h2><a href="index.php">Voltar</a></h2>

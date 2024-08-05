@@ -2,13 +2,16 @@
     session_start();
     require 'sistema/conexao.php';
     require 'sistema/sis_minha_pagina.php';
+    if (!isset($_SESSION['global_usuario_Id'])) {
+        header('location: entrar.php');
+    }
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Minha Página</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../darkmode_geral.css">
+        <link rel="stylesheet" href="darkmode_sis_usuarios.css">
     </head>
     <body>
         <h2><a href="index.php">Voltar</a></h2>
