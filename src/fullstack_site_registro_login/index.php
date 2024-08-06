@@ -45,26 +45,9 @@
         body {
             margin: 0;
             background-color: rgb(0, 83, 160);
-            background-image: url("imagens/windshield-5366584_1280.jpg");
+            background-image: url("imagens/windshield.jpg");
             height: 100vh;
         }
-        section {
-            justify-content: center;
-            display: flex;
-        }
-        article {
-            background-color: rgba(25, 29, 32, 0.9);
-            padding: 1vw;
-            margin: 1vw;
-            height: 95vh;
-        }
-        article h2 {
-            text-align: center;
-        }
-        article p {
-            text-align: center;
-        }
-        
     </style>
     <body>
         <section>

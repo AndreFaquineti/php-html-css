@@ -1,7 +1,7 @@
 /*Darkmode*/
 body {
-    background-color: rgb(25, 29, 32);
-    color: aliceblue;
+    background-color: white;
+    color: black;
 }
 a {
     color: deeppink;
@@ -12,20 +12,18 @@ a {
 }
 
 card {
+    
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 4px 8px 20px 0px rgba(0, 0, 0, 0.4);
-    max-width: min-content;
+    box-shadow: 4px 0px 80px 20px rgb(0, 0, 0);
+
     background-color: white;
     color: #000000;
+
     border-radius: 5px;
-    justify-content: center;
-    display: flex;
-    border: 2px;
+    border: 4px;
     border-style: solid;
     border-color: #000000;
-}
 
-conteudo {
     /* vertical | horizontal */
     /* superior | horizontal | inferior */
     /* superior | direita | inferior | esquerda */
