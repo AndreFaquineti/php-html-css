@@ -20,14 +20,20 @@
         max-width: 20vw;
         min-width: 200px;
         border-radius: 5px;
+        
     
-        margin: auto;
-    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
+        
         outline: 2px;
         outline-style: solid;
         outline-color: black;
     
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
     
         display: flex;
         flex-direction: column;
@@ -57,6 +63,10 @@
     }
     article p {
         text-align: center;
+    }
+    .input1 {
+        width: 150px;
+        height: 50px;
     }
 }
 /*Mobile*/
@@ -81,13 +91,18 @@
         min-width: 250px;
         border-radius: 5px;
     
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
     
         outline: 2px;
         outline-style: solid;
         outline-color: black;
     
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
     
         display: flex;
         flex-direction: column;
@@ -117,5 +132,9 @@
     }
     article p {
         text-align: center;
+    }
+    .input1 {
+        width: 150px;
+        height: 50px;
     }
 }

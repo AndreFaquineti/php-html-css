@@ -16,7 +16,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 75vh;
         }
         body {
             background-image: url(imagens/teste-entrar.svg);
@@ -33,7 +32,7 @@
                 <input type="email" name="post_email"><br><br>
                 Senha:<br>
                 <input type="password" name="post_senha"><br><br>
-                <input type="submit">
+                <input class="input1" type="submit">
             </form>
         </div>
         <?php
