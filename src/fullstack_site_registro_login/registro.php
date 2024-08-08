@@ -25,7 +25,7 @@
     <body>
         <h2><a href="index.php">Voltar</a></h2>
         <div class="card1">
-            <img src="imagens/icone-login.svg" alt="Icone de dashboard" style="width: 50%; justify-self: center;">
+            <img src="imagens/icone-registro.svg" alt="Icone de dashboard" style="width: 50%; justify-self: center;">
             <h2>Registro</h2>
             <form action="" method="post">
             Email:<br>
