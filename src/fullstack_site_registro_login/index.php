@@ -5,7 +5,6 @@
     # Definindo variaveis
     $usuario_id = '';
     $usuario_email = '';
-    $usuario_tema = '';
     $usuario_nome = '';
     $usuario_sobrenome = '';
     $usuario_apelido = '';
@@ -24,19 +23,49 @@
         # Mais variaveis pra parar de ter problema
         $usuario_id = $_SESSION['global_usuario_Id'];
         $usuario_email = $_SESSION['global_usuario_Email'];
-        $usuario_tema = $_SESSION['global_usuario_Tema'];
+        if (!isset($usuario_tema)) {
+            $usuario_tema = $_SESSION['global_usuario_Tema'];
+        }
         $usuario_nome = $_SESSION['global_usuario_Nome'];
         $usuario_sobrenome = $_SESSION['global_usuario_Sobrenome'];
         $usuario_apelido = $_SESSION['global_usuario_Apelido'];
+    }
+
+    if (!isset($_SESSION['global_usuario_Tema'])) {
+        $_SESSION['global_usuario_Tema'] = 1;
+    }
+    function trocarTema() {
+
+    if ($_SESSION['global_usuario_Tema'] == 1) {
+        $_SESSION['global_usuario_Tema'] = 2;
+    } else {
+        $_SESSION['global_usuario_Tema'] = 1;
+    }
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['trocarTema'])) {
+        trocarTema();
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
     }
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sistema de registro e login</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="darkmode_sis_usuarios.css">
+    <title>Sistema de registro e login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php
+        if (!isset($_SESSION['global_usuario_Tema'])) {
+            $_SESSION['global_usuario_Tema'] = 1;
+        }
+        if ($_SESSION['global_usuario_Tema'] == 1) {
+            echo '<link rel="stylesheet" href="tema-claro.css">';
+        }
+        if ($_SESSION['global_usuario_Tema'] == 2) {
+            echo '<link rel="stylesheet" href="tema-escuro.css">';
+        }
+    ?>
     </head>
     <style>
         html {
@@ -45,47 +74,48 @@
         }
         body {
             margin: 0;
-            background-color: rgb(0, 83, 160);
-            background-image: url("imagens/windshield.jpg");
             height: 100vh;
         }
     </style>
     <body>
-        <section>
-            <article style="width: 20vw;">
-            <h2>Preferencias do usuario</h2>
-            <P>Tema</P>
-            <h2>Informações pessoais</h2>
-            <p>
-                Nome de usuario: <?php echo $usuario_apelido; ?>
-            </p>
-            <p>
-                Id: <?php echo $usuario_id; ?>
-            </p>
-            <p>
-                Email: <?php echo $usuario_email; ?>
-            </p>
-            <P>
-                Nome: <?php echo $usuario_nome; ?>
-            </P>
-            <P>
-                Sobrenome: <?php echo $usuario_sobrenome; ?>
-            </P>
-            <h2><a href="minha_pagina.php">Conte-me mais sobre você.</a></h2>
-            </article>
-            <article style="width: 60vw;">
-                <h2>Sistema de cadastro e armazenamento de informações</h2>
-                <p>Cadastre-se ou entre para desfrutar de todas as funcionalidades</p>
-                <p><a href="registro.php">Cadastre-se</a></p>
-                <p>Ou</p>
-                <p><a href="entrar.php">Entre</a></p>
-            </article>
-            <article style="width: 20vw;">
+        <div class="conteudo">
+            <div class="coluna1">
                 <p><h2><a href="../">Pagina Inicial</a></h2></p>
-                <p><h2><a href="sair.php">Sair da sua conta.</a></h2></p>
-                <h2>Sobre</h2>
-                <p>Sistema capaz de receber, armazenar e utilizar informações. Esse projeto busca explorar as linguagens de frontend HTML, CSS e melhorar meu entendimento de lógica de programação e backend para sites usando PHP e MySQL.</p>
-            </article>
-        </section>
+                <p><b>Sobre: </b>Sistema capaz de receber, armazenar e utilizar informações. Esse projeto busca explorar as linguagens de frontend HTML, CSS e melhorar meu entendimento de lógica de programação e backend para sites usando PHP e MySQL.</p>
+            </div>
+            <div class="coluna2">
+                <div class="cima">
+                    <h2>Sistema de cadastro e armazenamento de informações</h2>
+                    <?php
+                        if ($usuario_id == '') {
+                            echo '<p><a href="registro.php"><h3 style="display: inline;">Cadastre-se</h3></a> ou <a href="entrar.php"><h3 style="display: inline;">Entre</h3></a> para desfrutar de todas as funcionalidades</p>';
+                        }
+                        if ($usuario_id != '') {
+                            echo '<p><h2><a href="sair.php">Sair</a></h2></p>';
+                        }
+                    ?>
+                </div>
+                <div class="baixo">
+                    <h2>Informações pessoais</h2>
+                    <p>Usuario: <?php echo $usuario_apelido; ?> Id: <?php echo $usuario_id; ?></p>
+                    <p>Email: <?php echo $usuario_email; ?></p>
+                    <P>Nome: <?php echo $usuario_nome; ?></P>
+                    <P>Sobrenome: <?php echo $usuario_sobrenome; ?></P>
+                    <?php
+                        if ($usuario_id != '') {
+                            echo '<h2><a href="minha_pagina.php">Conte-me mais sobre você.</a></h2>';
+                        }
+                    ?>
+                </div>
+            </div>
+            <div class="coluna3">
+                
+                <form method="post">
+                    <input class="input-tema" type="submit" value="" name="trocarTema">
+                </form>
+                <h2>Preferencias do usuario</h2>
+                <P>Tema</P>
+            </div>
+        </div>
     </body>
 </html>

@@ -6,10 +6,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registro</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="whitemode_sis_usuarios.css">
+    <title>Registro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php
+        if (!isset($_SESSION['global_usuario_Tema'])) {
+            $_SESSION['global_usuario_Tema'] = 2;
+        }
+        if ($_SESSION['global_usuario_Tema'] == 1) {
+            echo '<link rel="stylesheet" href="tema-claro.css">';
+        }
+        if ($_SESSION['global_usuario_Tema'] == 2) {
+            echo '<link rel="stylesheet" href="tema-escuro.css">';
+        }
+    ?>
     </head>
     <style>
         div {

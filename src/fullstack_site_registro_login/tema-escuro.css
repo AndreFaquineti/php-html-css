@@ -1,0 +1,246 @@
+/*Darkmode*/
+/*Desktop*/
+@media (min-width: 600px) {
+    body {
+        background-color: rgb(40, 40, 40);
+        color: rgb(255, 255, 255);
+    }
+    a {
+        color: deeppink;
+    }
+
+    #degrade1 {
+        background-image: linear-gradient(to right, deeppink, rgb(95, 10, 55));
+    }
+
+    /*Card 1*/
+    .card1 {
+        background-color: rgb(60, 60, 60);
+    
+        aspect-ratio: 20/30;
+        max-width: 20vw;
+        min-width: 200px;
+        border-radius: 5px;
+        
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
+        
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+    
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    
+        display: flex;
+        flex-direction: column;
+    
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+    .card1 h2 {
+        text-align: center;
+    }
+    .card1 img {
+        align-self: center;
+    }
+
+    .input1 {
+        width: 150px;
+        height: 50px;
+    }
+
+    .input-tema {
+        color: inherit;
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        margin: 5px;
+        outline: 2px solid rgb(0, 0, 0);
+        height: 50px;
+        width: 50px;
+        background:url(imagens/light-mode.svg) no-repeat;
+        background-size: cover;
+    }
+
+    /*Landing Page*/
+    .conteudo {
+        display: flex;
+        min-height: 95vh;
+    }
+    .coluna1 {
+        margin: 2vh 0vw 0vh 2vw;
+        width: 18vw;
+        
+        background-color: rgb(60, 60, 60);
+
+        text-align: center;
+
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+        border-radius: 5px;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+    .coluna2 {
+        margin: 2vh 2vw 0vh 2vw;
+        width: 56vw;
+
+        background-color: rgb(60, 60, 60);
+
+        text-align: center;
+
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+        border-radius: 5px;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+    .coluna3 {
+        margin: 2vh 2vw 0vh 0vw;
+        width: 18vw;
+
+        background-color: rgb(60, 60, 60);
+
+        text-align: center;
+
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+        border-radius: 5px;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+}
+/*Mobile*/
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(40, 40, 40);
+        color: rgb(255, 255, 255);
+    }
+    a {
+        color: deeppink;
+    }
+
+    #degrade1 {
+        background-image: linear-gradient(to right, deeppink, rgb(95, 10, 55));
+    }
+    /*Card 1*/
+    .card1 {
+        background-color: rgb(60, 60, 60);
+    
+        aspect-ratio: 20/20;
+        max-width: 20vw;
+        min-width: 250px;
+        border-radius: 5px;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+    
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+        outline-color: rgb(0, 0, 0);
+    
+        padding-top: 10px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+    
+        display: flex;
+        flex-direction: column;
+    
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+    .card1 h2 {
+        text-align: center;
+    }
+    .card1 img {
+        align-self: center;
+    }
+    
+    .input1 {
+        width: 150px;
+        height: 50px;
+    }
+
+    .input-tema {
+        color: inherit;
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        margin: 5px;
+        outline: 2px solid rgb(0, 0, 0);
+        height: 50px;
+        width: 50px;
+        background:url(imagens/light-mode.svg) no-repeat;
+        background-size: cover;
+    }
+
+    /*Landing Page*/
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+    .coluna1 {
+        margin: 2vh 4vw 0vh 4vw;
+
+        min-height: 20vh;
+        background-color: rgb(60, 60, 60);
+
+        text-align: center;
+
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+        border-radius: 5px;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+    .coluna2 {
+        margin: 2vh 4vw 2vh 4vw;
+        min-height: 50vh;
+        background-color: rgb(60, 60, 60);
+
+        text-align: center;
+
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+        border-radius: 5px;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+    .coluna3 {
+        margin: 0vh 4vw 2vh 4vw;
+        min-height: 20vh;
+        background-color: rgb(60, 60, 60);
+
+        text-align: center;
+
+        outline: 2px;
+        outline-style: solid;
+        outline-color: rgb(0, 0, 0);
+        border-radius: 5px;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    }
+}
