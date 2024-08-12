@@ -35,7 +35,6 @@
         $_SESSION['global_usuario_Tema'] = 1;
     }
     function trocarTema() {
-
     if ($_SESSION['global_usuario_Tema'] == 1) {
         $_SESSION['global_usuario_Tema'] = 2;
     } else {
@@ -45,6 +44,12 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['trocarTema'])) {
         trocarTema();
+        if (isset($_SESSION['global_usuario_Email'])) {
+            $stmt = $conn->prepare('UPDATE tabela_usuarios SET  Tema = :Tema WHERE Email = :Email');
+            $stmt->bindParam(':Email', $_SESSION['global_usuario_Email']);
+            $stmt->bindParam(':Tema', $_SESSION['global_usuario_Tema']);
+            $stmt->execute();
+        }
         header("Location: " . $_SERVER['PHP_SELF']);
         exit();
     }
