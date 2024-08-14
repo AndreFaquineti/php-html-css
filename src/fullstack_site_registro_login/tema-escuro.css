@@ -15,7 +15,7 @@
 
     /*Card 1*/
     .card1 {
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
     
         aspect-ratio: 20/30;
         max-width: 20vw;
@@ -40,7 +40,7 @@
         flex-direction: column;
     
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
     .card1 h2 {
         text-align: center;
@@ -78,7 +78,7 @@
         margin: 2vh 0vw 0vh 2vw;
         width: 18vw;
         
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
 
         text-align: center;
 
@@ -88,13 +88,13 @@
         border-radius: 5px;
 
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
     .coluna2 {
         margin: 2vh 2vw 0vh 2vw;
         width: 56vw;
 
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
 
         text-align: center;
 
@@ -104,13 +104,13 @@
         border-radius: 5px;
 
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
     .coluna3 {
         margin: 2vh 2vw 0vh 0vw;
         width: 18vw;
 
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
 
         text-align: center;
 
@@ -120,7 +120,7 @@
         border-radius: 5px;
 
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
 }
 /*Mobile*/
@@ -138,7 +138,7 @@
     }
     /*Card 1*/
     .card1 {
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
     
         aspect-ratio: 20/20;
         max-width: 20vw;
@@ -163,7 +163,7 @@
         flex-direction: column;
     
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
     .card1 h2 {
         text-align: center;
@@ -201,7 +201,7 @@
         margin: 2vh 4vw 0vh 4vw;
 
         min-height: 20vh;
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
 
         text-align: center;
 
@@ -211,12 +211,12 @@
         border-radius: 5px;
 
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
     .coluna2 {
         margin: 2vh 4vw 2vh 4vw;
         min-height: 50vh;
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
 
         text-align: center;
 
@@ -226,12 +226,12 @@
         border-radius: 5px;
 
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
     .coluna3 {
         margin: 0vh 4vw 2vh 4vw;
         min-height: 20vh;
-        background-color: rgb(60, 60, 60);
+        backdrop-filter: blur(20px);
 
         text-align: center;
 
@@ -241,6 +241,6 @@
         border-radius: 5px;
 
         /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+        box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
     }
 }

@@ -78,6 +78,8 @@
         max-height: 100vh;
         }
         body {
+            background-image: url(imagens/freepik.svg);
+            background-size: cover;
             margin: 0;
             height: 100vh;
         }
@@ -121,6 +123,9 @@
                 <h2>Preferencias do usuario</h2>
                 <P>Tema</P>
             </div>
+        </div>
+        <div style="margin: 10px 45vw;">
+            <a href="https://www.freepik.com/free-vector/flat-design-geometric-shapes-background_6143429.htm">Image by freepik</a>
         </div>
     </body>
 </html>
