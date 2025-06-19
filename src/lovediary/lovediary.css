@@ -1,0 +1,60 @@
+body {
+    background-image: url(black.png);
+    color: white;
+
+    /*ALINHAR DIV*/
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: fit-content;
+}
+h1 {
+    color: rgb(255, 0, 200);
+
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 
+        /*NEON*/
+        0px 0px 15px rgb(255, 95, 183),
+        0px 0px 30px rgb(255, 95, 183),
+        0px 0px 45px rgb(255, 95, 183),
+        0px 0px 60px rgb(255, 95, 183),
+        /*OUTLINE DO TEXTO*/
+        1px 0px 0px rgb(170, 0, 57),
+        -1px 0px 0px rgb(170, 0, 57),
+        0px 1px 0px rgb(170, 0, 57),
+        0px -1px 0px rgb(170, 0, 57)
+    ;
+}
+h2 {
+    color: rgb(61, 255, 255);
+
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 
+        /*NEON*/
+        0px 0px 15px rgb(0, 238, 255),
+        0px 0px 30px rgb(0, 238, 255),
+        0px 0px 45px rgb(0, 238, 255),
+        0px 0px 60px rgb(0, 238, 255),
+        /*OUTLINE DO TEXTO*/
+        1px 0px 0px rgb(0, 153, 255),
+        -1px 0px 0px rgb(0, 153, 255),
+        0px 1px 0px rgb(0, 153, 255),
+        0px -1px 0px rgb(0, 153, 255)
+    ;
+}
+text {
+    color: rgb(255, 255, 255);
+
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 
+        /*NEON*/
+        0px 0px 15px rgb(255, 255, 255),
+        0px 0px 30px rgb(255, 255, 255),
+        0px 0px 45px rgb(255, 255, 255),
+        0px 0px 60px rgb(255, 255, 255),
+        /*OUTLINE DO TEXTO*/
+        1px 0px 0px rgb(216, 216, 216),
+        -1px 0px 0px rgb(216, 216, 216),
+        0px 1px 0px rgb(216, 216, 216),
+        0px -1px 0px rgb(216, 216, 216)
+    ;
+}
